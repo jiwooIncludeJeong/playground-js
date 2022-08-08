@@ -1,3 +1,26 @@
 body {
     background-color: white;
 }
+
+/*
+후손 선택자 문법 사이의 전체 선택자
+후손 선택자 사이에 전체 선택자가 올 경우, ol 바로 이후에 오는 자식 li는 선택 안됨
+*/
+ol * li {
+    color: red;
+}
+
+/*
+자식 선택자
+ol 이내에 있는 직계 자식 li만
+*/
+ol > li {
+    color: red;
+}
+/*
+후손 선택자
+ol 아래에 있는 모든 li
+*/
+ol li {
+      color: red;
+  }
